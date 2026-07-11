@@ -4,7 +4,7 @@ public class CommandExecutorProxy implements CommandExecutor {
     private boolean isAdmin = false;
     private CommandExecutor commandExecutor;
 
-    // Correction : Changé de 'private' à 'public' pour qu'il soit accessible depuis le Main
+    
     public CommandExecutorProxy(String login, String password){
         this.isAdmin = "Arc&stone".equals(login) && "password".equals(password);
         this.commandExecutor = new CommandExecutorImpl();
